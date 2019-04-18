@@ -191,10 +191,7 @@ module.exports = {
     port: 8080,
     hot: false,
     historyApiFallback: true,
-    proxy: {
-      "*": "wss://localhost:8080",
-      "*": "ws://localhost:8080",
-     },
+    },
     before(app) {
       app.get('/Resources/wallet-options-v4.json', function(req, res) {
         // combine wallet options base with custom environment config
@@ -293,5 +290,4 @@ module.exports = {
         "font-src 'self'"
       ].join('; ')
     }
-  }
 }
