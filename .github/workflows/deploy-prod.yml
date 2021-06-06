@@ -23,7 +23,7 @@ jobs:
     - name: Publish to Github Packages Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
-        name: RScottLewis/my-app/my-app
+        name: RScottLewis/w1st-wallet/w1st-wallet
         registry: docker.pkg.github.com
         username: ${{ secrets.GITHUB_USERNAME }}
         password: ${{ secrets.GITHUB_TOKEN }}
@@ -43,5 +43,5 @@ jobs:
         script: |
           docker stop $(docker ps -a -q)
 	  echo "$GITHUB_TOKEN" | docker login docker.pkg.github.com -u $GITHUB_USERNAME --password-stdin
-          docker pull docker.pkg.github.com/RScottLewis/my-app/my-app:latest
-          docker run -dit -p 80:80 docker.pkg.github.com/RScottLewis/my-app/my-app:latest
+          docker pull docker.pkg.github.com/RScottLewis/w1st-wallet/packages/blockchain-wallet-v4-frontend:latest
+          docker run -dit -p 80:80 docker.pkg.github.com/RScottLewis/w1st-wallet/packages/blockchain-wallet-v4-frontend:latest

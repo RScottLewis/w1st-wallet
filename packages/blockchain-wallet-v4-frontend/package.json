@@ -7,6 +7,10 @@
     "name": "Blockchain.info",
     "url": "https://blockchain.com"
   },
+  "engines": {
+      "node": ">= 10.2",
+      "yarn": ">= 1.12"
+    },
   "main": "index.js",
   "scripts": {
     "analyze": "cross-env-shell ANALYZE=true NODE_ENV=production webpack-cli --config webpack.config.ci.js",
