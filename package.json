@@ -191,7 +191,7 @@
     "thread-loader": "2.1.1",
     "uglifyjs-webpack-plugin": "2.1.1",
     "webpack": "4.29.0",
-    "webpack-bundle-analyzer": "3.0.3",
+    "webpack-bundle-analyzer": "3.3.2",
     "webpack-cli": "3.2.1",
     "webpack-dev-server": "3.1.14",
     "wsrun": "2.2.1"
